@@ -24,6 +24,23 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            label: 'ホーム',
+            icon: Icon(
+              Icons.home,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: 'メッセージ',
+            icon: Icon(
+              Icons.chat_outlined,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
